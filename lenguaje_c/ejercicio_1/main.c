@@ -5,7 +5,7 @@
  * Determina si un número es par
  */
 bool es_par(int numero){
-    return false;
+    return true;
 }
 
 /*
@@ -13,7 +13,7 @@ bool es_par(int numero){
  * Un año es bisiesto si es disible entre 4, pero si es divisible entre 100 solo puede ser bisiesto si tambien lo es por 400.
  */
 bool es_bisiesto(int anio){
-    return false;
+    return false; 
 }
 
 int main(){
@@ -53,7 +53,7 @@ int main(){
     }
 
     // Test 5
-    if(es_bisiesto(2100)){
+    if(!es_bisiesto(2100)){
         printf("Error es_bisiesto para 2100.\n");
     } else {
         printf("Test es_bisiesto para 2100 correcto.\n");
